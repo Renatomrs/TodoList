@@ -1,0 +1,27 @@
+@media (min-width: 1200px) {
+    #app {
+        display: grid;
+        grid:
+            "header header header header" 
+            "lists  active active active" /
+            1fr minmax(100px, 200px)  minmax(250px, 500px) 
+    }
+    
+    header {
+        grid-area: header;
+    }
+
+    .all-tasks {
+        grid-area: lists;
+    }
+
+    .todo-list {
+        grid-area: active;
+    }
+
+    input[type="checkbox"] {
+        width: 17px; 
+        height: 17px;
+    }
+    
+} 

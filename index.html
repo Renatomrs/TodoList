@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1 class="title">Todo List</h1>
+        </header>
+    
+        <div class="all-tasks">
+            <h2 class="task-list-title">My list</h2>
+
+            <form action="" data-new-list-form>
+                <input 
+                    type="text"
+                    class="new list"
+                    data-new-list-input
+                    placeholder="New list name"
+                    maxlength="50"
+                />
+                <button class="btn create">
+                    <img src="/assets/add.svg" alt="Search">
+                </button>
+            </form>
+            
+            <ul class="task-list" data-lists></ul>
+        </div>
+
+        <div class="todo-list" data-list-display-container>
+            <div class="todo-header">
+                    <h2 class="list-title" data-list-title></h2>
+                    <p class="task-count" data-list-count></p>
+            </div>
+
+            <div class="todo-body">
+
+                <div class="new-task-creator">
+                    <form action="" data-new-task-form>
+                        <input 
+                            type="text"
+                            data-new-task-input
+                            class="new list"
+                            placeholder="New task name"
+                            maxlength="80"
+                        />
+                        <button class="btn create">
+                            <img src="/assets/add.svg" alt="Search">
+                        </button>
+                    </form>
+                    <div class="tasks" data-tasks></div>
+                </div>
+
+                <div class="delete-stuff">
+                    <button class="btn btn-delete" data-clear-complete-tasks-button>Clear completed tasks</button>
+                    <button class="btn btn-delete2" data-delete-list-button><i class="fas fa-trash" id="icon-delete"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>&copy; - 2020</span>
+    </footer>
+
+    <template id="task-template">
+        <div class="task">
+            <input type="checkbox" />
+            <label>
+                <span class="custom-checkbox"></span>
+            </label>
+        </div>
+    </template>
+    <script src="main.js"></script>
+</body>
+</html>

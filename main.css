@@ -1,0 +1,195 @@
+#app {
+    min-height: 100vh;
+}
+
+#app > header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.3rem solid var(--light-shadow);
+}
+
+header > .title {
+    font-size: 2.0rem;
+}
+
+.all-tasks {
+    width: 90%;
+    max-width: 348px;
+    height: 348px;
+    margin: 20px auto;
+    box-shadow: 0 3px 7px 0 var(--shadow);
+    border-radius: 9px;
+}
+
+.all-tasks > .task-list-title {
+    color: var(--secondary-text-color);
+    margin-left: 25px;
+    padding: 25px 0 0 0;
+}
+
+.all-tasks > form {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    border: 0.3rem solid var(--form-color);
+    border-radius: 7px;
+}
+
+.all-tasks > form > input {
+    width: 100%;
+    min-width: 150px;
+    height: 100%;
+    border: 0;
+    outline: none;
+    appearance: none;
+    padding: 0 0 0 14px;
+}
+
+.all-tasks > form > button {
+    min-width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-tasks > .task-list {
+    width: 100%;
+    max-height: 207px;
+    overflow: auto;
+    margin: 20px auto;
+}
+
+.task-list > li {
+    width: 100%;
+    font-size: 1.9rem;
+    padding: 9px 16px;
+    list-style: none;
+    border-bottom: 1px solid var(--light-shadow);
+}
+
+.task-list > li:nth-child(1) {
+    border-top: 1px solid var(--light-shadow);
+}
+
+.todo-list {
+    width: 90%;
+    height: 520px;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: var(--background);
+    border-radius: 9px;
+    box-shadow: 0 3px 7px 0 var(--shadow);
+}
+
+.new-task-creator {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+.new-task-creator > form {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px auto;
+    border: 0.3rem solid var(--form-color);
+    border-radius: 7px;
+}
+
+.new-task-creator > form > input {
+    width: 100%;
+    min-width: 150px;
+    height: 100%;
+    border: 0;
+    outline: none;
+    appearance: none;
+    padding: 0 0 0 14px;
+}
+
+.new-task-creator > form > button {
+    min-width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task {
+    margin-bottom: 9px;
+    font-size: 1.7rem;
+}
+
+.todo-header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.3rem solid var(--light-shadow);
+    padding: 0 25px;
+}
+
+.todo-header > .task-count {
+    padding: 0 0 0 22px;
+}
+
+.tasks {
+    width: 100%;
+    height: 300px;
+    max-height: 400px;
+    overflow: auto;
+    padding: 0 16px;
+}
+
+.task {
+    margin: 9px 0 0 9px;
+}
+
+.custom-checkbox {
+    margin-left: 7px;
+}
+
+.delete-stuff {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14px;
+}
+
+.btn-delete {
+    width: 200px;
+    border-radius: 7px;
+}
+
+.btn-delete2 {
+    width: 90px;
+    border-radius: 7px;
+}
+
+.btn-delete:hover, .btn-delete2:hover {
+    box-shadow: 0 1px 4px 0 var(--btn-shadow);
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,55 @@
+:root {
+    font-size: 60%;
+
+    --background: #fff;
+    --primary-text-color: #333;
+    --secondary-text-color:#4d4d4d;
+    --shadow: rgba(0, 0, 0, 0.3);
+    --light-shadow: rgba(51, 51, 51, 0.179);
+    --form-color: rgba(51, 51, 51, 0.2);
+    --btn-shadow: #010c05bd;
+    --check-box: rgba(51, 51, 51, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--primary-text-color);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+button {
+font-family: 'Poppins', sans-serif;
+}
+
+#icon-delete {
+    font-size: 2.2rem;
+}
+
+.btn {
+    height: 40px;
+    appearance: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--secondary-text-color);
+    letter-spacing: 1px;
+    box-shadow: 0 1px 4px 0 var(--shadow);
+}
+
+input[type="checkbox"] {
+    width: 25px; 
+    height: 25px;
+    border: 0.3rem solid var(--check-box);
+}
+
+.active-list {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
