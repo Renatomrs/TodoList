@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 1px 4px 0 var(--shadow);
+    border-bottom: 1px solid #ddd;
     background-color: var(--primary-background);
 }
 
@@ -19,11 +19,11 @@ header > .title {
 
 .all-tasks {
     width: 90%;
-    max-width: 348px;
-    height: 348px;
+    max-width: 350px;
+    height: 365px;
     margin: 20px auto;
     background-color: var(--primary-background);
-    box-shadow: 0 3px 7px 0 var(--shadow);
+    border: 1px solid #ddd;
     border-radius: 9px;
 }
 
@@ -65,7 +65,7 @@ header > .title {
 
 .all-tasks > .task-list {
     width: 100%;
-    max-height: 207px;
+    max-height: 214px;
     overflow: auto;
     margin: 20px auto;
 }
@@ -88,8 +88,8 @@ header > .title {
     max-width: 500px;
     margin: 20px auto;
     background-color: var(--primary-background);
+    border: 1px solid #ddd;
     border-radius: 9px;
-    box-shadow: 0 3px 7px 0 var(--shadow);
 }
 
 .new-task-creator {
@@ -175,6 +175,7 @@ header > .title {
 
 .btn-delete {
     width: 200px;
+    box-shadow: 0 1px 4px 0 var(--shadow);
     border-radius: 7px;
 }
 
@@ -183,7 +184,7 @@ header > .title {
     border-radius: 7px;
 }
 
-.btn-delete:hover, .btn-delete2:hover {
+.btn-delete:hover {
     box-shadow: 0 1px 4px 0 var(--btn-shadow);
 }
 
